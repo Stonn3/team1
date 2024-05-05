@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь</title>
+    <!-- Подключите Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Подключите ваши стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container text-center mt-3">
+        <!-- Заголовок -->
+        <h1 class="display-6">Обратная связь</h1>
+
+        <!-- Маленький текст -->
+        <p class="text-muted">Мы рады ответить на ваши вопросы или предложения.</p>
+
+        <!-- Фото -->
+        <img src="img/img_container.png" alt="Фото" class="center-image mb-3">
+
+        <!-- Заголовок формы -->
+        <h2 class="h5"></h2>
+
+        <!-- Форма -->
+        <form id="contact-form" class="row mt-3 justify-content-start">
+            <!-- Поле "Email address" -->
+            <div class="col-12 mb-2">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <!-- Поле "Your Message" -->
+            <div class="col-12 mb-2">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Введите ваше сообщение" required></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100">Send now</button>
+            </div>
+        </form>
+
+        <!-- Разделы с иконками -->
+        <div class="row mb-3 mt-5">
+            <div class="col-4">
+                <img src="img/home.png" alt="Домик" class="icon-image">
+                <h6>Адрес</h6>
+                <p class="mb-0">Город Печали, Бульвар Слез, дом отчаяния</p>
+            </div>
+            <div class="col-4">
+                <img src="img/phone.png" alt="Телефон" class="icon-image">
+                <h6>Контактный телефон</h6>
+                <p class="mb-0">+7 999 123 4567</p>
+            </div>
+            <div class="col-4">
+                <img src="img/Filled.png" alt="Письмо" class="icon-image">
+                <h6>Email</h6>
+                <p class="mb-0">info@example.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключите Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Ваш JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
